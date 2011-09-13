@@ -1,3 +1,4 @@
+.rvmrc
 #trademark sillyness
 app/views/home/_show.html.haml
 app/views/home/_show.mobile.haml
@@ -6,7 +7,7 @@ public/images/ball.png
 # Configuration files
 config/app_config.yml
 config/app.yml
-config/application.yml
+#config/application.yml
 config/script_server*.yml
 config/fb_config.yml
 config/oauth_keys.yml

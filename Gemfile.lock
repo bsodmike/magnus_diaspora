@@ -269,7 +269,6 @@ GEM
     multi_json (1.0.3)
     multi_xml (0.2.2)
     multipart-post (1.1.3)
-    mysql2 (0.2.6)
     net-ldap (0.2.2)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
@@ -329,6 +328,7 @@ GEM
       oa-openid (= 0.2.6)
     open4 (1.1.0)
     orm_adapter (0.0.5)
+    pg (0.11.0)
     polyglot (0.3.2)
     pyu-ruby-sasl (0.0.3.3)
     rack (1.2.3)
@@ -425,9 +425,11 @@ GEM
       rack (~> 1.1)
       tilt (< 2.0, >= 1.2.2)
     spruz (0.2.13)
+    sqlite3 (1.3.4)
     subexec (0.0.4)
     systemu (2.3.0)
     term-ansicolor (1.0.6)
+    therubyracer-heroku (0.8.1.pre3)
     thin (1.2.11)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -471,6 +473,7 @@ DEPENDENCIES
   activerecord-import
   acts-as-taggable-on!
   addressable (= 2.2.4)
+  arel
   aws (= 2.3.32)
   bundler (>= 1.0.0)
   capistrano (= 2.5.19)
@@ -508,12 +511,12 @@ DEPENDENCIES
   mini_magick (= 3.2)
   mobile-fu
   mongrel
-  mysql2 (= 0.2.6)
   newrelic_rpm
   nokogiri
   oauth2-provider (= 0.0.16)
   ohai (= 0.5.8)
   omniauth (= 0.2.6)
+  pg
   rails (= 3.0.10)
   rails-i18n
   rcov
@@ -533,6 +536,8 @@ DEPENDENCIES
   selenium-webdriver (= 2.4)
   settingslogic (= 2.0.6)
   sod!
+  sqlite3
+  therubyracer-heroku
   thin (= 1.2.11)
   twitter (= 1.5.0)
   typhoeus
