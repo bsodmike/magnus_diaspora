@@ -1,16 +1,10 @@
 source 'http://rubygems.org'
 
-#gem 'mysql2', '0.2.6' if ENV['DB'].nil? || ENV['DB'] == 'all' || ENV['DB'] == "mysql"
-#gem 'pg' if ENV['DB'] == 'all' || ENV['DB'] == "postgres"
-#gem 'sqlite3' if ENV['DB'] == 'all' || ENV['DB'] == "sqlite"
-
-gem 'sqlite3', :group =>:development
+gem 'sqlite3', :group => :development if ENV['DB'].nil? || ENV['DB'] == 'all' || ENV['DB'] == "sqlite"
 
 group :production do
-  # for heroku
-  gem 'therubyracer-heroku'
-  gem 'pg'
-  gem 'arel'
+  gem 'mysql2', '0.2.6' if ENV['DB'].nil? || ENV['DB'] == 'all' || ENV['DB'] == "mysql"
+  gem 'pg' if ENV['DB'] == 'all' || ENV['DB'] == "postgres"
 end
 
 gem 'rails', '3.0.10'
